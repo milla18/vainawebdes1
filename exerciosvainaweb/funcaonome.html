@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label>Nome</label>
+    <input type="text" id="nome" placeholder="digite o nome aqui"/>
+
+    <label>Idade</label>
+    <input type="number"  id="idade" placeholder="digite o nome aqui"/>
+
+    <label>Estilo musical</label>
+    <input type="text" id="estilomusical" placeholder="digite o nome aqui"/>
+    
+    <button onclick="enviar()">Enviar</button>
+</form>
+    <script>
+        function enviar(){
+            var nome = document.querySelector("#nome").value
+            var idade = document.querySelector("#idade").value
+            var estilomusical = document.querySelector("#estilomusical").value
+            console.log('nome: '+nome)
+            console.log('idade: '+idade)
+            console.log('estilomusical: '+estilomusical)
+
+
+        }
+    </script>     
+
+
+</body>
+</html>
